@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- this is how we link up the css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- And this is how we link up the JS! -->
+    <script defer src="js/main.js"></script>
+    <!-- A fun title -->
+    <title>Tic-Tac-Toe Design</title>
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <h2>C'est au tour des X</h2>
+    <!-- Many websites are just divs on divs on divs. -->
+    <div class="flex-container flex-column">
+        <div class="flex-container flex-wrap" id="board">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        </div>
+        <!-- I added a little reset button because our users are going to want to play round after round of our glorious game without ever refreshing the browser! -->
+        <button id="reset-button">reset</button>
+    </div>
+
+    
+    <div class="stats">
+        <p>Parties jouées : <span id="statPartieJouer">0</span></p>
+        <p>Victoires X : <span id="statWinX">0</span></p>
+        <p>Victoires O : <span id="statWinO">0</span></p>
+    </div>
+
+
+    <footer>
+        <div class="flex-container">
+            <div class="footer-gauche">
+                <p>Inspiration du projet :</p>
+                 <a href="//github.com/annaelizabeth2019/tictactoetwo">https://github.com/annaelizabeth2019/tictactoetwo</a>
+            </div>
+            <div class="footer-centre">
+                <p>Derek Bernier</p>
+                <p>Design Web A2023</p>
+            </div>
+            <div class="footer-droite">
+                <a href="mailto:derekbernier31@outlook.com.com">
+                    <img src="MicrosoftTeams-image.png" class="photo">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
